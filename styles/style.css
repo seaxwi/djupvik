@@ -1,0 +1,257 @@
+@import 'reset.css';
+
+html {
+	background-image: url("../images/layout/body-pattern.jpeg");
+	text-align: center;
+	color: #1F1F1F;
+	font-family: 'helvetica', sans-serif;
+	min-height:100%;
+	
+	/* footer hack */
+	padding-bottom: 100px; /* FOOTER HEIGHT + 20px */
+	min-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+body {
+	height:100%;
+	text-align: left;
+}
+
+header {
+	position: relative;
+	box-sizing: border-box;
+}
+
+nav {
+	background-color: #FFFFFF;
+	font-size: 1em;
+	font-weight: 800;
+	padding: 8px;
+	text-align: center;
+}
+
+nav a {
+	color: #1F1F1F;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.active {
+	background-color: #FF9933;
+	
+	/* Uncomment for design spec version
+	text-decoration: underline;
+	text-decoration-color: #CDC9C5;
+	*/
+}
+
+nav a:hover {
+	background-color: #CDC9C5;
+}
+
+/* div stuff */
+
+.sticky {
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.content {
+	max-width: 900px;
+	min-height: 100%;
+	margin: 0 auto;
+	overflow: hidden; /* Increase height if necessary to contain floats */
+}
+
+.col {
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	padding: 20px 20px;
+	margin-top: 20px;
+	height: auto;
+	border-top: 5px solid #FF9933;
+}
+
+.full {
+	width: calc(100% - 40px);
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.big {
+	float: left;
+	width: calc(65% - 20px);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.small {
+	float: left;
+	width: calc(35% - 20px);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.reverse {
+	float:right;
+}
+
+footer {
+	box-sizing: border-box;
+	width: 100%;
+	background: #FFFFFF;
+	text-align: center;
+	padding: 8px;
+
+	/* footer hack */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 80px; /* FOOTER HEIGHT */
+}
+
+img {
+	padding: 4px;
+	width: 100%;
+	height: auto;
+}
+
+.banner {
+	padding: 0;
+}
+
+.text {
+	width: auto;
+}
+
+.portrait {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+p {
+	display: block;
+	margin: 1em 0;
+	line-height: normal;
+}
+
+.pretty {
+	font-style: italic;
+	text-align: center;
+}
+
+h1 {
+	display: block;
+	font-size: 2em;
+	margin: 0.67em 0;
+	font-weight: bold;
+}
+
+h1.title {
+	position: absolute;
+	margin: 50px;
+	background-color: #99CCFF;
+}
+
+h2 {
+	display: block;
+	font-size: 1.5em;
+	margin: 0.83em 0;
+	font-weight: bold;
+}
+
+h3 {
+	display: block;
+	font-size: 1em;
+	margin: 0.83em 0;
+	font-weight: bold;
+}
+
+
+ul {
+	display: block;
+	list-style-type: disc;
+	margin: 1em 0;
+	padding-left: 40px;
+}
+
+li {
+	display: list-item;
+	margin-bottom: 5px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+table {
+	margin: 20px;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+}
+
+th {
+	font-weight: bold;
+}
+
+fieldset {
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+	border: 1px solid black;
+	margin: 10px 0px;
+	width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+	div.content {
+		margin: 0;
+	}
+	div.big {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	div.small {
+		float: bottom;
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	img.text {
+		display: block;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	h1.title {
+		text-align: center;
+		top: 30px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	nav a {
+		display: block;
+		color: #1F1F1F;
+		padding: 8px;
+		text-decoration: none;
+	}
+	.sticky {
+		/* Hacky way to block sticky script */
+		position: static;
+	}
+}

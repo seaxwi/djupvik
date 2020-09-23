@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="sv">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Kontakt | Djupviks Hamn</title>
+	<link href="../styles/style.css" rel="stylesheet" type="text/css" media="all"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+  
+<body>
+	<header>
+		<h1 class='title'>Djupviks Hamn</h1>
+		<img src="../images/layout/header.png" class='banner' alt="">
+	</header>
+	<nav id='nav'>
+		<a href="../index.html">Start</a>
+		<a href="info.html">Information</a>
+		<a href="guest.html">Gästplatser</a>
+		<a href="history.html">Historia</a>
+		<a class='active' href="contact.html">Kontakt</a>
+		<a href="members.html">Medlemsinfo</a>
+		<a href="english.html">In English</a>
+	</nav>
+	<div class=content>
+		<div class='col full'>
+			<p>Har du frågor eller synpunkter? Använd formuläret nedan för att komma i kontakt med oss!</p>
+	
+			<form method="post" action="#">
+				<fieldset>
+					<legend>Kontaktformulär</legend>
+					<p>
+						<label for="subject">Ämne:</label>
+						<input type="text" size="30" maxlength="256"
+						name="Subject" id="subject" />
+					</p>
+					<p>
+						<label for="message">Beskrivning:</label>
+						<textarea name="Message" id="message" rows="10" cols="30">
+						</textarea>
+					</p>
+					<p>
+						<label for="phonenbr">Telefon:</label>
+						<input type="text" size="30" maxlength="256"
+						name="PhoneNbr" id="phonenbr" />
+					</p>
+					<p>
+						<label for="email">E-post:</label>
+						<input type="text" size="30" maxlength="256"
+						name="Email" id="email" />
+					</p>
+					<p>
+						<label for="category">Ärendetyp:</label>
+						<select name="Category" id="category">
+							<option>Välj ett alternativ...</option>
+							<option value="boat">Båtplats</option>
+							<option value="member">Medlem</option>
+							<option value="other">Övrigt</option>
+						</select>
+					</p>
+					<p>
+						<label for="contact">Önskad kontakttyp:</label>
+						<select name="Contact" id="contact">
+							<option>Välj ett alternativ...</option>
+							<option value="boat">E-post</option>
+							<option value="member">Telefon</option>
+							<option value="other">Ingen kontakt</option>
+						</select>
+					</p>
+					<p class="submit">
+						<input type="submit" value="Skicka!" />
+					</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<p class='footer'>Är Du medlem i hamnföreningen och inte har tillgång till medlemssidan? Skicka en e-post till sekreteraren (info@djupvikshamn.se)</p>
+	</footer>
+	<script src="../js/navbar.js"></script>
+</body>
+</html>
